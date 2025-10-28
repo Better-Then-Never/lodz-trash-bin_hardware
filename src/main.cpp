@@ -10,10 +10,10 @@
 #define SOUND_VELOCITY 0.034f
 #define trigPin 12
 #define echoPin 14
-#define checkInterval 3000
+#define checkInterval 250
 #define timeBeforeSessionEnds 20000UL
-#define sensorCheckInterval 100
-#define distanceToBinWall 11
+#define sensorCheckInterval 50
+#define distanceToBinWall 11.75
 
 void processData(AsyncResult &aResult);
 void noopCallback(AsyncResult &aResult);
@@ -42,7 +42,7 @@ char databasePathSessionBuf[128];
 char countPathBuf[128];
 
 unsigned long lastDropTime = 0;
-const unsigned long dropDebounceMs = 500UL;
+const unsigned long dropDebounceMs = 300UL;
 
 void initWiFi()
 {
