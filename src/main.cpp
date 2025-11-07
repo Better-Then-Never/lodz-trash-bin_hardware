@@ -13,7 +13,7 @@
 #define checkInterval 250
 #define timeBeforeSessionEnds 20000UL
 #define sensorCheckInterval 50
-#define distanceToBinWall 11.75
+#define distanceToBinWall 12
 
 void processData(AsyncResult &aResult);
 void noopCallback(AsyncResult &aResult);
